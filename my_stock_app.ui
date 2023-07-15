@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>my_stock_app</string>
+  </property>
+  <widget class="QLabel" name="label_start">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>340</y>
+     <width>391</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 24pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>-- START --</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_login">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>540</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 20pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>LOGIN</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_password">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>440</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18pt &quot;微軟正黑體&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_stock">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>120</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;微軟正黑體&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_stock">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>股票代號/名稱 ：</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_search">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>80</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;微軟正黑體&quot;;
+color: rgb(0, 85, 255);</string>
+   </property>
+   <property name="text">
+    <string>查詢</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_stock_mode">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>功能模式 ：</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_mode_search">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>查詢模式</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_mode_select">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>20</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>選股模式</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_mode_test">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>20</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>回測模式</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_market_index">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>大盤指數 ：</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_twse_index">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>120</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>加權指數</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_otc_index">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>120</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>櫃買指數</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_future_index">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>120</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>台指近月</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView_stock_data">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>791</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_search_result">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>621</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;
+color: rgb(0, 0, 173);</string>
+   </property>
+   <property name="text">
+    <string>name</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_market">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>70</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>大盤</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_stock">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>個股</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_target">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>大盤 / 類股 ：</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_search_result_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>791</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;
+color: rgb(0, 0, 173);</string>
+   </property>
+   <property name="text">
+    <string>today_price</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_corporation">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>670</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>三大法人</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView_stock_data_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>710</y>
+     <width>791</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_update">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>20</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;微軟正黑體&quot;;
+color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>更新</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_date_to_date">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>～</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit_start">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>20</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>2019</year>
+     <month>3</month>
+     <day>23</day>
+    </date>
+   </property>
+   <property name="displayFormat">
+    <string>yyyy-MM-dd</string>
+   </property>
+   <property name="date">
+    <date>
+     <year>2023</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit_end">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>20</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>2019</year>
+     <month>3</month>
+     <day>23</day>
+    </date>
+   </property>
+   <property name="displayFormat">
+    <string>yyyy-MM-dd</string>
+   </property>
+   <property name="date">
+    <date>
+     <year>2023</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_go">
+   <property name="geometry">
+    <rect>
+     <x>1830</x>
+     <y>20</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;微軟正黑體&quot;;
+color: rgb(0, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>GO</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_ma">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>20</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_ema">
+   <property name="geometry">
+    <rect>
+     <x>1360</x>
+     <y>20</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>EMA</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_technical_index_1">
+   <property name="geometry">
+    <rect>
+     <x>1570</x>
+     <y>20</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_technical_index_2">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>20</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_BBANDS">
+   <property name="geometry">
+    <rect>
+     <x>1450</x>
+     <y>20</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;微軟正黑體&quot;;</string>
+   </property>
+   <property name="text">
+    <string>BBANDS</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
