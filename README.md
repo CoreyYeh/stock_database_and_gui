@@ -76,7 +76,7 @@ __gui上資料呈現 use_stock_data.py__<br/><br>
 透過所設定的市場搜尋資料庫中的市場三大法人相關資料，並將股價資訊回傳。<br><br>
 
 __繪製K線圖 plot_candles.py__<br/><br>
-使用finlab網路課程所授之繪圖程式碼，供gui介面顯示使用。<br><br>
+生成K線圖、成交量圖與技術指標圖，供gui介面顯示使用。<br><br>
 
 ## set_database.py
 使用封包stock_data_crawler.main_crawler內的爬蟲程式，twse_price_crawler,otc_price_crawler,twse_corporation_crawler,otc_corporation_crawler，爬取上市股價、上櫃股價、上市三大法人、上櫃三大法人。<br>
